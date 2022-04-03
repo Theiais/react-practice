@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+header {
+  font-size: 1.7rem;
+  background-image: url(/img/\(4\).jpeg);
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 5px inset beige;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  height: calc(100% - 60px);
+  margin-top: 10px;
+}
+
+.title-bar {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 150px;
+  flex-shrink: 0;
+  padding: 18px;
+  border-radius: 25px;
+  background: #fdfcfc;
+  box-shadow: 5px 5px 10px #d7d6d6, -5px -5px 10px #ffffff;
+}
+
+.title-bar > span {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+article {
+  display: flex;
+  flex-flow: wrap;
+  border-radius: 10px;
+  background: #e5e0e0;
+  border-radius: 25px;
+  background: #e5e0e0;
+  box-shadow: inset 5px 5px 10px #c3bebe, inset -5px -5px 10px #ffffff;
+  align-content: flex-start;
+  overflow-y: scroll;
+}
+
+.components {
+  display: flex;
+  flex-flow: wrap;
+  width: 200px;
+  min-height: 150px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #94898f;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #b8abab, -5px -5px 10px #fae7e7;
+}
+
+img {
+  width: 180px;
+  object-fit: cover;
+}
+
+.add-button {
+  padding: 7px 10px;
+  background: #d9c9c9;
+  color: black;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #94898f;
+  color: black;
+}
+
+.submit-button {
+  padding: 7px 10px;
+  background: #94898f;
+  color: black;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background: #d9c9c9;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  outline: none;
+  border: 2px solid #94898f;
+  border-radius: 6px;
+}
+
+.input:focus {
+  border-color: #d9c9c9;
+}
+
+.modal-set {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: fixed;
+  margin-top: 20%;
+  left: 40%;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #cbd4e7;
+  box-shadow: 5px 5px 0px #adb4c4, -5px -5px 0px #e9f4ff;
+  padding: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+@media (max-width: 1000px) {
+  .components {
+    background: #d9c9c9;
+  }
+}
+
+@media (max-width: 700px) {
+  .components {
+    background: #8f8f8f;
+  }
+}
