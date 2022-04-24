@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# blog-project
 
-## Getting Started
+- [설계](#설계)
+- [구현](#구현)
+- [트러블 슈팅](#트러블-슈팅)
 
-First, run the development server:
+## 설계
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### 목표
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `next.js`를 사용하여 `ssg` 블로그 만들기
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 인덱스 페이지
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- 로고(헤더)
+- 메뉴
+- 사진과 짧은 본인 소개 및 블로그 소개
+- 최근 포스트
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 메뉴
 
-## Learn More
+- about
+- post
+- category
+- projects
 
-To learn more about Next.js, take a look at the following resources:
+#### about
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 메인화면에서 사용한 소개 섹션 재사용
+- 블로그 제작에 대한 긴 설명
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### post
 
-## Deploy on Vercel
+- 블로그 게시물
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### category
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 카테고리별 게시물 모아보기
+
+#### projects
+
+- 완성된 프로젝트 게시 예정
+
+### 목표
+
+- `next.js`를 사용해 **블로그** 제작하기
+
+### 사용
+
+| -             | Link                                            |
+| :------------ | :---------------------------------------------- |
+| Lang          | [typescript](https://www.typescriptlang.org/)   |
+| Web Framework | [Next.js](https://nextjs.org/)                  |
+| CSS Library   | [Emotion](https://emotion.sh/docs/introduction) |
+| CMS           | [MDX](https://github.com/mdx-js/mdx)            |
+
+### 공부 필요
+
+- next.js 사용법
+- emotion 사용법
+- 반응형 디자인 만드는 법
+- seo
+
+### 레이아웃
+
+![image](./public/readme.jpg)
+
+## 기능
+
+TBD
+
+## 구현
+
+TBD
+
+## 트러블 슈팅
+
+TBD
